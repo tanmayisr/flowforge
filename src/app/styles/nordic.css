@@ -1,0 +1,158 @@
+/* ===== GLOBAL THEME ===== */
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0e0f12;
+  color: #e5e7eb;
+}
+
+/* ===== APP LAYOUT ===== */
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== MAIN WORK AREA ===== */
+
+.workspace {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+  width: 220px;
+  background: #15161a;
+  border-right: 1px solid #26272b;
+  padding: 18px;
+}
+
+.sidebar h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* ===== SIDEBAR BUTTONS ===== */
+
+.node-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.node-trigger {
+  background: #f97316;
+  color: white;
+}
+
+.node-condition {
+  background: #3b82f6;
+  color: white;
+}
+
+.node-action {
+  background: #ef4444;
+  color: white;
+}
+
+.node-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ===== CANVAS ===== */
+
+.canvas {
+  flex: 1;
+  background: radial-gradient(
+      circle at center,
+      #1a1b20 1px,
+      transparent 1px
+    )
+    0 0 / 20px 20px;
+}
+
+/* ===== CONSOLE ===== */
+
+.console {
+  height: 120px;
+  background: #0a0a0a;
+  border-top: 1px solid #26272b;
+  font-family: monospace;
+  color: #00ff9c;
+  padding: 10px 14px;
+  overflow-y: auto;
+}
+
+/* ===== TASKBAR ===== */
+
+.taskbar {
+  height: 60px;
+  background: #15161a;
+  border-top: 1px solid #26272b;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+/* ===== BUTTON BASE ===== */
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ===== BUTTON COLORS ===== */
+
+.btn-neutral {
+  background: #2a2b30;
+  color: white;
+}
+
+.btn-neutral:hover {
+  background: #3a3b40;
+}
+
+.btn-run {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-run:hover {
+  background: #16a34a;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-blue:hover {
+  background: #2563eb;
+}
